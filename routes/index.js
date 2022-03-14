@@ -14,8 +14,8 @@ module.exports = function (app) {
         let documento = new modelo ({
             nome:req.body.fist_name,
             sobrenome:req.body.last_name,
-            email:req.body.email,
-            enviado: req.body.mensagem
+            //email:req.body.email,
+            //enviado: req.body.mensagem
         })
         .save()
         .then(function () {
