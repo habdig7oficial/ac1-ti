@@ -6,6 +6,10 @@ app.use(express.urlencoded({extended:false}))
 
 app.use(express.static("./assets"))
 
+const consign = require("consign")
+
+consign().include("./routes").into(app)
+
 
 const porta = process.env.PORT || 4040
 

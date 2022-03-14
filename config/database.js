@@ -1,5 +1,5 @@
-//const mongoose = require("mongoose")
+const mongoose = require("mongoose")
 
-//const conexao = async function () {
-  //  let atlas = await mongoose.connect("")
-//}
+const conexao = async function () {
+    let atlas = await mongoose.connect("")
+}
