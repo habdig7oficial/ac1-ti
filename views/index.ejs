@@ -1,17 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href=" /css/style.css">
+    <link rel="stylesheet" href=" /css/style800.css" media="(max-width:800px)">
+
 </head>
+
 <body>
-    <form action="" method="post">
-        <fieldset>
-            <div><input type="text" name="first_name" id="first-name"></div>
-            <input type="submit" value="env">
-        </fieldset>
-    </form>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu" for="close-menu" title="close menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#home">LOGO</a>
+            </h1>
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">INTRO</a></li>
+                    <li><a href="#grid-one">MY GRID</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    
+    <div class="menu-spacing"></div>
+
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>HTML 5 | CSS3 | JS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="intro-img">
+                <img src="/images/javascript.svg" alt="Logo do HTML, CSS e JS">
+            </div>
+        </div>
+    </section>
+
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Lorem ipsum dolor sit</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Galery</h2>
+            <div class="grid">
+                <div class="galery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image for unsplash">
+                </div>
+                <div class="galery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image for unsplash">
+                </div>
+                <div class="galery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image for unsplash">
+                </div>
+                <div class="galery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image for unsplash">
+                </div>
+                <div class="galery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image for unsplash">
+                </div>
+                <div class="galery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image for unsplash">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="content-form">
+                <h2 class="grid-main-heading">Contact</h2>
+                <form action="" method="post">
+                    <fieldset class="form-grid">
+
+                        <div class="form-group">
+                            <label for="first-name">First name</label>
+                            <input type="text" name="first_name" id="first-name" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">Last name</label>
+                            <input type="text" name="last_name" id="last-name" placeholder="Your last name here">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <input type="message" name="message" id="message" placeholder="Your message">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <button type="submit">Send message</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+        <p><a href="nofollow" target="_blanck" href="#">Feito com <span class="heart">❤</span> AC - 1 Trimestre - INW | BD2 | LP2</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#">-></a>
+
 </body>
 </html>
