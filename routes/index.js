@@ -15,17 +15,21 @@ module.exports = function (app) {
             nome:req.body.fist_name,
             sobrenome:req.body.last_name,
             email:req.body.email,
-            enviado: req.body.mensagem
+            enviado: req.body.message
         })
         .save()
         .then(function () {
             res.redirect("/")
+
+            console.log(`nome: ${req.body.first_name}, sobrenome:${req.body.last_name}, email:${req.body.email}, enviado: ${req.body.message}`)
         })
         .catch(function () {
             console.error("não foi possível acessar o banco de dados")
         })
     })
 
-
+    app.get("/*",function (req,res) {
+        res.render("404.ejs")
+    })
 
 }
