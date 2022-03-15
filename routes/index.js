@@ -8,7 +8,10 @@ module.exports = function (app) {
 
     app.post("/",function (req,res) {
 
-        let conexao = require("../config/database")()
+        let conexao = require("../config/database")
+
+        conexao()
+
         let modelo  = require("../models/models")
 
         let documento = new modelo ({
