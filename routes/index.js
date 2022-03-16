@@ -15,7 +15,7 @@ module.exports = function (app) {
         let modelo  = require("../models/models")
 
         let documento = new modelo ({
-            nome:req.body.fist_name,
+            nome:req.body.first_name,
             sobrenome:req.body.last_name,
             email:req.body.email,
             enviado: req.body.message
