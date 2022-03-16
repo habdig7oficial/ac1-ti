@@ -27,7 +27,7 @@ module.exports = function (app) {
             console.log(`nome: ${req.body.first_name}, sobrenome:${req.body.last_name}, email:${req.body.email}, enviado: ${req.body.message}`)
         })
         .catch(function () {
-            console.error("não foi possível acessar o banco de dados")
+            res.send("não foi possível acessar o banco de dados")
         })
     })
 
