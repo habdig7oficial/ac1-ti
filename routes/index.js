@@ -1,4 +1,7 @@
 module.exports = (app) => {
+
+    db = "ac1-db"
+
     app.get('/', (req,res) => {
         res.render('index.ejs')
     })
