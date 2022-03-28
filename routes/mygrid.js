@@ -13,6 +13,7 @@ module.exports = (app) => {
 
         let resultado = await mygrid.find()
         res.render('mygrid.ejs',{dados:resultado})
+        res.send(resultado)
 
         console.log(resultado)
     })

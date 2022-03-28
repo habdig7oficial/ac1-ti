@@ -40,7 +40,7 @@
                 <li><a href="#grid-one">MY GRID</a></li>
                 <li><a href="#gallery">GALLERY</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                
+                <li><a href="/admin" target="_blank">Admin</a></li>
             </ul>
         </nav>
     </div>
@@ -79,14 +79,18 @@
         <h2 class="grid-main-heading">My Grid</h2>
         <div class="grid">
 
-        <%for (let index = 0; index < dados.length; index++) {%>
-            <article>
-                <h3><%=dados[index].titulo%></h3>
-                <p><%=dados[index].texto%></p>
-                
-            </article>
+    <%for (let index = 0; index < dados.length; index++) {%>
+    <tr>
+        <td><%=dados[index].titulo%></td>
+        <br>
+        <td><%=dados[index].texto%></td>
+        <br>
+        <td><%=dados[index].enviado%></td>
 
-        <%}%>
+    </tr>
+
+    <%}%>
+
         </div>
     </div>
 </section>
