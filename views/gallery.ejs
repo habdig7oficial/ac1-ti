@@ -22,10 +22,16 @@
 
     <!--inserir um loop para a exibição do JSON mygrid-->
 
-    <tr>
-        <th>Nome</th>
-        <th>Preview</th>
-    </tr>
+    <%for (let index = 0; index < dados.length; index++) {%>
+        <tr>
+            <td><%=dados[index].arquivo%></td>
+            <br>
+            <td><img width="100px" src="./assets/images<%=dados[index].arquivo%>" alt=""></td>
+
+
+]
+    
+        </tr>
 
     <!--fim do loop-->
 </body>
