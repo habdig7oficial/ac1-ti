@@ -12,10 +12,10 @@ module.exports = (app) => {
     app.get('/mygrid', async (req,res) => {
 
         let resultado = await mygrid.find()
-        res.render('mygrid.ejs',{dados:resultado})
-        res.send(resultado)
-
         console.log(resultado)
+        res.render('mygrid.ejs',{dados:resultado})
+
+
     })
 
 
