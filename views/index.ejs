@@ -45,12 +45,13 @@
     </div>
 </aside>
 
+
 <div class="menu-spacing"></div>
 
 <section id="home" class="intro main-bg section">
     <div class="main-content intro-content">
         <div class="intro-text-content">
-            <h2>HTML 5 | CSS3 | JS</h2>
+            <h2>HTML 5 | CSS3 | JS  6</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur rerum eos ipsa rem accusantium voluptas quas
             unde quos magnam non, explicabo sequi. Facilis illo numquam quis, eaque quos voluptates sequi.</p>
         </div>
@@ -76,21 +77,15 @@
     <div class="main-content grid-one-content">
         <h2 class="grid-main-heading">My Grid</h2>
         <div class="grid">
+
+        <%for (let index = 0; index < dados.length; index++) {%>
             <article>
-                <h3>Teste 1</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non
-                commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.</p>
+                <h3><%=dados[index].titulo%></h3>
+                <p><%=dados[index].texto%></p>
+                
             </article>
-            <article>
-                <h3>Teste 2</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non
-                commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.</p>
-            </article>
-            <article>
-                <h3>Teste 2</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non
-                commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.</p>
-            </article>
+
+        <%}%>
         </div>
     </div>
 </section>

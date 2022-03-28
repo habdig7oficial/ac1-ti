@@ -2,14 +2,23 @@ module.exports = (app) => {
 
     db = "ac1-db"
 
-    app.get('/', (req,res) => {
-        res.render('index.ejs')
+    let importar = require("../config/database")
+
+    let conexao = importar.conexao()
+
+    let mygrid = require("../models/mygrid")
+
+    app.get('/', async (req,res) => {
+
+        let documento = await mygrid.find()
+
+        res.render('index.ejs',{dados:documento})
     })
 
 
 app.post('/', (req,res) =>{
-    var conexao = require('../config/database')
-    conexao()
+    //var conexao = require('../config/database')
+    //conexao()
 
     var modelo = require('../models/mensagem')
 

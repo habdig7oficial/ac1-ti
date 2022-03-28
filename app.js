@@ -9,4 +9,6 @@ app.get('/', (req,res) =>{
 
 app.listen(porta, () =>{
     console.log('http://localhost:' + porta)
+    
 })
+
