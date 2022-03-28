@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/style800.css" media="(max-width:800px)">
+    <link rel="stylesheet" href="./assets/style800.css">
 </head>
 
 <body>
@@ -40,19 +40,17 @@
                 <li><a href="#grid-one">MY GRID</a></li>
                 <li><a href="#gallery">GALLERY</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><a href="/admin" target="_blank">Admin</a></li>
             </ul>
         </nav>
     </div>
 </aside>
-
 
 <div class="menu-spacing"></div>
 
 <section id="home" class="intro main-bg section">
     <div class="main-content intro-content">
         <div class="intro-text-content">
-            <h2>HTML 5 | CSS3 | JS  6</h2>
+            <h2>HTML 5 | CSS3 | JS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur rerum eos ipsa rem accusantium voluptas quas
             unde quos magnam non, explicabo sequi. Facilis illo numquam quis, eaque quos voluptates sequi.</p>
         </div>
@@ -78,19 +76,21 @@
     <div class="main-content grid-one-content">
         <h2 class="grid-main-heading">My Grid</h2>
         <div class="grid">
-
-    <%for (let index = 0; index < dados.length; index++) {%>
-    <tr>
-        <td><%=dados[index].titulo%></td>
-        <br>
-        <td><%=dados[index].texto%></td>
-        <br>
-        <td><%=dados[index].enviado%></td>
-
-    </tr>
-
-    <%}%>
-
+            <article>
+                <h3>Teste 1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non
+                commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.</p>
+            </article>
+            <article>
+                <h3>Teste 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non
+                commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.</p>
+            </article>
+            <article>
+                <h3>Teste 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non
+                commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.</p>
+            </article>
         </div>
     </div>
 </section>
@@ -159,8 +159,7 @@
 </section>
 
 <footer id="footer" class="footer white-bg">
-    <p><a rel="nofollow" target="_blank" href="#">| Feito com <span class="heart">❤</span> | AC - 1 Trimestre - INW | BD2 | LP2 |</a></p>
-    <p><a href="/admin" target="_blank"></a></p>
+    <p><a rel="nofollow" target="_blank" href="#">| Feito com <span class="heart">❤</span>| AC - 1 Trimestre - INW | BD2 | LP2 |</a></p>
 </footer>
 
     <a class="back-to-top" href="#">▷</a>

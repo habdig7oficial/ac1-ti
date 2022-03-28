@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body>
+    <a href="/admin">Voltar</a>
+    <h1>Gallery - Gerenciamento de conteúdo</h1>
+    <h3>Gallery - Adicionar</h3>
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for="imagem">Título:</label>
+        <input type="file" name="imagem" id="" required> <br>
+
+        <input type="submit" value="Gravar">
+
+
+    </form>
+    <h2>Gallery - Listar</h2>
+
+
+    <!--inserir um loop para a exibição do JSON mygrid-->
+
+    <%for (let index = 0; index < dados.length; index++) {%>
+        <tr>
+            <td><%=dados[index].arquivo%></td>
+            <br>
+            <td><img width="100px" src="./assets/images<%=dados[index].arquivo%>" alt=""></td>
+
+
+]
+    
+        </tr>
+
+    <!--fim do loop-->
+</body>
+</html>

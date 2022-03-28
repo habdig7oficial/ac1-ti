@@ -1,12 +1,13 @@
-const dotenv = require('dotenv').config()
-const mongoose = require("mongoose")
+const mongoose = require('mongoose')
 
-const conexao = async function () {
-    let atlas = await mongoose.connect(process.env.SCRIPTDB)
+let db = "2emia"
+
+const conexao = async() =>{
+    //conexão local
+    // var bdlocal = await mongoose.connect('mongodb://localhost/ac1tri')
+    //conexao atlas
+
+    var atlas = await mongoose.connect (`mongodb+srv://root:Santinho111@habdig7oficial-cluster.ccizs.mongodb.net/${db}?retryWrites=true&w=majority`)
 }
 
-module.exports = conexao
-
-
-/*console.log(process.env.SCRIPTDB)*/
-
+module.exports = {conexao,db}
