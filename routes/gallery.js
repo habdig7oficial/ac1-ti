@@ -10,11 +10,11 @@ module.exports = function (app) {
 
     let multer = require("../config/multer")
 
-    app.post("/gallery",multer.single("imagem"),function (req,res) {
+    app.post("/gallery",multer.single("imagem"),async function (req,res) {
         
         database()
 
-        let documento = new gallery({
+        let documento = await new gallery({
             arquivo:req.file.filename
         }).save()
 
