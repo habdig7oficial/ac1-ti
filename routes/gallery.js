@@ -6,7 +6,8 @@ module.exports = function (app) {
 
     let gallery = require("../models/gallery") 
 
-    app.get("/gallery",function (req,res) {
+    app.get("/gallery",async function (req,res) {
+        let documento = await gallery.find()
         res.render("gallery.ejs",{dados:""})
     })
 
