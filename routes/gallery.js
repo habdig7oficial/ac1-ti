@@ -2,7 +2,7 @@ module.exports = function (app) {
 
     let conexao = require("../config/database")
 
-    conexao()
+    conexao.conexao()
 
     let gallery = require("../models/gallery") 
 
