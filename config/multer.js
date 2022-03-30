@@ -20,7 +20,7 @@ fileFilter:(req,file,cb)=>{
 
 ) {
     cb(null,true)
-}else{cb(null,true) /*return; cb(new Error("tipo inválido")*/}}})
+}else{cb(null,true) /*return; cb(new Error("tipo inválido")*/}}}).single("imagem")
 
 
 module.exports = upload
