@@ -9,6 +9,7 @@ module.exports = function (app) {
     app.get("/gallery",async function (req,res) {
         let documento = await gallery.find()
         res.render("gallery.ejs",{dados:documento})
+        console.log(documento)
     })
 
     let multer = require("../config/multer")
