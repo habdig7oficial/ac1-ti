@@ -11,10 +11,16 @@ const armazenamento = multer.diskStorage({
 })
 
 
-let upload = multer ({storage:armazenamento,limits:{fileSize:1000 }}
-    
-    
-    )
+let upload = multer ({storage:armazenamento,limits:{fileSize:1000},
+fileFilter:(req,file,cb)=>{
+    if (file.mimetype == "image/png" ||
+    file.mimetype == "image/svg" ||
+    file.mimetype == "image/jpg" ||
+    file.mimetype == "image/jpeg"
+
+) {
+    cb(null,true)
+}else{cb(null,true) /*return; cb(new Error("tipo inválido")*/}}})
 
 
 module.exports = upload
