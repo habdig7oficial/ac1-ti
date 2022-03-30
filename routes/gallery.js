@@ -8,7 +8,7 @@ module.exports = function (app) {
 
     app.get("/gallery",async function (req,res) {
         let documento = await gallery.find()
-        res.render("gallery.ejs")
+        res.render("admin.ejs",{dados:documento})
         console.log(documento)
     })
 
@@ -23,5 +23,3 @@ module.exports = function (app) {
         res.redirect("/gallery")
     })
 }
-
-/*,{dados:documento} */
